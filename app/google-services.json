@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131605312744",
+    "project_id": "yourview-d9463",
+    "storage_bucket": "yourview-d9463.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131605312744:android:0ed71ac2e700678eccc55d",
+        "android_client_info": {
+          "package_name": "com.example.discussyourview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Fa3gpbZveQRGXCXjDjcl17axuim_huI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
