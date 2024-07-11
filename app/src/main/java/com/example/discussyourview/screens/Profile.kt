@@ -1,7 +1,7 @@
 package com.example.discussyourview.screens
 
 
-import androidx.compose.foundation.clickable
+
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -16,6 +16,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.discussyourview.navigation.Routes
 import com.example.discussyourview.viewmodel.AuthViewModel
+
 
 
 @Composable
