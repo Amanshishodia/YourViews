@@ -11,6 +11,7 @@ import com.example.discussyourview.screens.BottomNav
 import com.example.discussyourview.screens.Home
 import com.example.discussyourview.screens.Login
 import com.example.discussyourview.screens.Notification
+import com.example.discussyourview.screens.OtherUser
 import com.example.discussyourview.screens.Profile
 import com.example.discussyourview.screens.Register
 import com.example.discussyourview.screens.Search
@@ -25,13 +26,13 @@ fun NavGraph(navController: NavHostController){
                    Splash(navController)
                }
                composable(Routes.Home.routes){
-                   Home()
+                   Home(navController)
                }
                composable(Routes.Notification.routes){
                    Notification()
                }
                composable(Routes.Search.routes){
-                   Search()
+                   Search(navController )
 
                }
                composable(Routes.Profile.routes){
@@ -49,6 +50,11 @@ fun NavGraph(navController: NavHostController){
                composable(Routes.Register.routes){
                    Register(navController)
                }
+               composable(Routes.OtherUsers.routes){
+                   val data =it.arguments!!.getString("data")
+                   OtherUser(navController,data!!)
+               }
+
 
 
 

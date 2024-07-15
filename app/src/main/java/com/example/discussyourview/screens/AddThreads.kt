@@ -102,7 +102,8 @@ fun AddThreads(navHostController: NavHostController){
 
 ConstraintLayout (modifier = Modifier
     .fillMaxSize()
-    .padding(16.dp)){
+    .padding(16.dp))
+{
     val (crossPic,text,logo,userName,editText,attachMedia,replyText,button,imageBox)=createRefs()
 
 
@@ -129,7 +130,7 @@ ConstraintLayout (modifier = Modifier
     })
     Image(painter = rememberAsyncImagePainter(model = SharedPref.getImageUrl(context)), contentDescription = "close", modifier = Modifier
         .constrainAs(logo) {
-            top.linkTo(text.bottom)
+            top.linkTo(text.bottom, margin = 8.dp)
             start.linkTo(parent.start)
         }
         .size(36.dp)

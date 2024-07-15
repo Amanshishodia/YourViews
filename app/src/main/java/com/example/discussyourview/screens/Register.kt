@@ -40,6 +40,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -157,7 +158,7 @@ fun Register(navController: NavHostController) {
         OutlinedTextField(
             value = userName,
             onValueChange = { userName = it },
-            label = { Text(text = "Enter Your Name") },  // Make sure this refers to androidx.compose.material3.Text
+            label = { Text(text = "Enter Your UserName") },  // Make sure this refers to androidx.compose.material3.Text
             keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Text),
             singleLine = true,
             modifier = Modifier.fillMaxWidth()
@@ -204,7 +205,7 @@ fun Register(navController: NavHostController) {
 
         }, modifier = Modifier.fillMaxWidth()) {
             Text(
-                text = "Sign Up ",
+                text = "Sign Up",
                 style = TextStyle(fontWeight = FontWeight.ExtraBold, fontSize = 20.sp),
                 modifier = Modifier.padding(vertical = 6.dp)
             )
