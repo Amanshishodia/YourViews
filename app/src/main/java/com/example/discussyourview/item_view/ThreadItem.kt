@@ -61,7 +61,7 @@ fun ThreadItem(thread:ThreadModel,users:UserModel,navHostController: NavHostCont
                    start.linkTo(userImage.end, margin = 12.dp)
                    bottom.linkTo(userImage.bottom, )
                })
-
+///
            Text(thread.thread, style = TextStyle(fontSize = 20.sp), modifier = Modifier.constrainAs(title) {
                top.linkTo(userName.top, margin = 20.dp)
                start.linkTo(userName.start)

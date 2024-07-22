@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -206,7 +207,7 @@ fun Register(navController: NavHostController) {
 
         }, modifier = Modifier.fillMaxWidth()) {
             Text(
-                text = "Sign Up",
+                text = "Sign Up ",
                 style = TextStyle(fontWeight = FontWeight.ExtraBold, fontSize = 20.sp),
                 modifier = Modifier.padding(vertical = 6.dp)
             )
